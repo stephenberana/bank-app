@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/bank-app/static/css/main.baae272b.chunk.css",
-    "main.js": "/bank-app/static/js/main.03cba584.chunk.js",
-    "main.js.map": "/bank-app/static/js/main.03cba584.chunk.js.map",
-    "runtime-main.js": "/bank-app/static/js/runtime-main.f0b72f24.js",
-    "runtime-main.js.map": "/bank-app/static/js/runtime-main.f0b72f24.js.map",
-    "static/js/2.0776a14c.chunk.js": "/bank-app/static/js/2.0776a14c.chunk.js",
-    "static/js/2.0776a14c.chunk.js.map": "/bank-app/static/js/2.0776a14c.chunk.js.map",
-    "static/js/3.dd157172.chunk.js": "/bank-app/static/js/3.dd157172.chunk.js",
-    "static/js/3.dd157172.chunk.js.map": "/bank-app/static/js/3.dd157172.chunk.js.map",
+    "main.css": "/bank-app/static/css/main.a0cc4b2c.chunk.css",
+    "main.js": "/bank-app/static/js/main.9638a0b0.chunk.js",
+    "main.js.map": "/bank-app/static/js/main.9638a0b0.chunk.js.map",
+    "runtime-main.js": "/bank-app/static/js/runtime-main.3abfd43c.js",
+    "runtime-main.js.map": "/bank-app/static/js/runtime-main.3abfd43c.js.map",
+    "static/js/2.7807ea28.chunk.js": "/bank-app/static/js/2.7807ea28.chunk.js",
+    "static/js/2.7807ea28.chunk.js.map": "/bank-app/static/js/2.7807ea28.chunk.js.map",
+    "static/js/3.fb243641.chunk.js": "/bank-app/static/js/3.fb243641.chunk.js",
+    "static/js/3.fb243641.chunk.js.map": "/bank-app/static/js/3.fb243641.chunk.js.map",
     "index.html": "/bank-app/index.html",
-    "static/css/main.baae272b.chunk.css.map": "/bank-app/static/css/main.baae272b.chunk.css.map",
-    "static/js/2.0776a14c.chunk.js.LICENSE.txt": "/bank-app/static/js/2.0776a14c.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/bank-app/static/media/logo.6ce24c58.svg"
+    "static/css/main.a0cc4b2c.chunk.css.map": "/bank-app/static/css/main.a0cc4b2c.chunk.css.map",
+    "static/js/2.7807ea28.chunk.js.LICENSE.txt": "/bank-app/static/js/2.7807ea28.chunk.js.LICENSE.txt",
+    "static/media/login.css": "/bank-app/static/media/bgimage.23c2e8be.jpg",
+    "static/media/Register.css": "/bank-app/static/media/bgimage2.ffd62f78.jpg",
+    "static/media/dashboard.css": "/bank-app/static/media/bgimage3.3819d059.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f0b72f24.js",
-    "static/js/2.0776a14c.chunk.js",
-    "static/css/main.baae272b.chunk.css",
-    "static/js/main.03cba584.chunk.js"
+    "static/js/runtime-main.3abfd43c.js",
+    "static/js/2.7807ea28.chunk.js",
+    "static/css/main.a0cc4b2c.chunk.css",
+    "static/js/main.9638a0b0.chunk.js"
   ]
 }
