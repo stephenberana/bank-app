@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+body, html, #root, .app, .container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .header {
+      font-family: 'Arapey', serif;
+  }
+  
+  .container {
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    overflow: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0.5) ), url('./bgimage.jpg');
+    background-position: right 30%;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+  
+  .loginForm {
+   box-sizing: border-box;
+   width: 100%;
+   max-width: 400px;
+   padding-left: 20px;
+   padding-right: 20px;
+   position: relative;
+   z-index: 100;
+  }
+  
+  .inputField {
+   padding-top: 16px;
+  }
+  
+  .input {
+   box-sizing: border-box;
+   outline: none;
+   border: solid 2px #1189de;
+   border-radius: 4px;
+   color: #292929;
+   width: 100%;
+   padding: 12px;
+   font-size: 14px;
+   background: rgba(255, 255, 255, 1);
+  }
+  
+  .submitButton {
+   padding-top: 16px;
+  }
+  
+  
+  .submitbtn {
+   height: 55px;
+   width: 180px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 5px solid black;
+   box-sizing: border-box;
+   border-radius: 5px;
+   font-family: 'Montserrat', sans-serif;
+   cursor: pointer;
+  }
+
+  .registerLink {
+    padding: 10px;
+  }
