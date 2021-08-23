@@ -10,7 +10,7 @@ class App extends React.Component {
       <Router>
         <div className="app">
           <Switch>
-            <Route path="/main">
+            <Route path="/bank-app">
               <LoginForm />
             </Route>
             <Route path="/register-link">
