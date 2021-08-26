@@ -3,6 +3,7 @@ import AppReducer from "./AppReducer";
 import DepositTransaction from "./DepositTransaction";
 import WithdrawTransaction from "./WithdrawTransaction";
 import Balance from "../Dashboard/balance";
+import RegisterNow from "../Login/register-link";
 
 const initialState = {
   depositTransactions:
@@ -11,6 +12,8 @@ const initialState = {
     JSON.parse(localStorage.getItem("withdrawTransactions")) || [],
   //   remainingBalance:
   //     JSON.parse(localStorage.getItem("remainingBalance")) || [],
+  values: JSON.parse(localStorage.getItem("values")) || [],
+  username: localStorage.getItem("username") || [],
 };
 
 export const GlobalContext = createContext(initialState);
@@ -32,7 +35,10 @@ export const GlobalContextProvider = ({ children }) => {
       "remainingBalance",
       JSON.stringify(state.remainingBalance)
     );
+    localStorage.setItem("values", JSON.stringify(state.values));
   });
+
+  console.log(initialState);
 
   const addDeposit = (depositTransaction) => {
     dispatch({
@@ -62,15 +68,23 @@ export const GlobalContextProvider = ({ children }) => {
     });
   };
 
+  const storeInfo = (values) => {
+    dispatch({
+      type: "VALUES",
+      payload: values,
+    });
+  };
   return (
     <GlobalContext.Provider
       value={{
         depositTransactions: state.depositTransactions,
         withdrawTransactions: state.withdrawTransactions,
+        username: state.username,
         addDeposit,
         addWithdraw,
         deleteTransaction,
         totalBalance,
+        storeInfo,
       }}
     >
       {children}

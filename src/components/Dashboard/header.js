@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
+import { selectUser } from "../stores/UserSlice";
 
 const Header = () => {
-    return (
-        <div className="dash-head-container">
-            <h1> Hi, user! </h1>
-        </div>
-    )
-}
+  const user = useSelector(selectUser);
 
-export default Header
+  return (
+    <div className="dash-head-container">
+      <h1 style={{ fontSize: 32 }}> Hi, {user.name}! </h1>
+    </div>
+  );
+};
+
+export default Header;

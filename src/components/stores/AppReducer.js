@@ -25,6 +25,11 @@ export default (state, action) => {
         ...state,
         remainingBalance: [action.payload, ...state.remainingBalance],
       };
+    case "VALUES":
+      return {
+        ...state,
+        values: [action.payload, ...state.values],
+      };
     default:
       return state;
   }

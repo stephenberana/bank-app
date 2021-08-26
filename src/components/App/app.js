@@ -3,27 +3,24 @@ import LoginForm from "../Login/loginform";
 import Dashboard from "../Dashboard/dashboard";
 import RegisterNow from "../Login/register-link";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectUser } from "../stores/UserSlice";
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <div className="app">
-          <Switch>
-            <Route path="/bank-app">
-              <LoginForm />
-            </Route>
-            <Route path="/register-link">
-              <RegisterNow />
-            </Route>
-            <Route path="/dashboard">
-              <Dashboard />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    );
-  }
-}
+const App = () => {
+  const user = useSelector(selectUser);
+
+  return (
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/bank-app">{user ? <Dashboard /> : <LoginForm />}</Route>
+          <Route path="/register-link">
+            <RegisterNow />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+};
 
 export default App;
